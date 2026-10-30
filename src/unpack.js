@@ -131,7 +131,7 @@ const deobfuscateCompiledProjectSources = async (compiledProject, opts) => {
   const targets = compiledProject.compiledTargets || {};
   let total = 0, processed = 0, failed = 0;
 
-  // 统计覆盖：全部 scripts（含无 hat 引用的）+ procedures，按对象去重
+  // 按对象去重
   for (const bundle of Object.values(targets)) {
     const seen = new Set();
     for (const script of Object.values(bundle.scripts || {})) {

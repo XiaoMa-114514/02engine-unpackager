@@ -18,12 +18,12 @@ const USAGE = `o2-unpackager <input> [options]
 
 Options:
   -o, --output <dir>        输出目录 ./output
-  -t, --type <type>         强制类型：html|zip|electron|nwjs|webview|cordova|node-cli|auto
+  -t, --type <type>         强制类型 html|zip|electron|nwjs|webview|cordova|node-cli|auto
   --no-deobfuscate          跳过反混淆
-  --deobfuscator <name>     反混淆库：webcrack|javascript-deobfuscator|none，默认webcrack
+  --deobfuscator <name>     反混淆库 webcrack|javascript-deobfuscator|none，默认webcrack
   --deobfuscate-retries <n> 反混淆失败时的重试次数，默认1
-  --no-sb3                  不重建sb3，只导出 project.json + assets
-  --keep-placeholders       保留未识别占位块（默认剥离到 comments）
+  --no-sb3                  不重建sb3，只导出 project.json和assets
+  --keep-placeholders       保留未识别占位块（默认剥离到comments）
   --keep-raw                保留原始factorySource
   --verbose                 详细日志
 `;
