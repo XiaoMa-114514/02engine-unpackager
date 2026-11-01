@@ -7,7 +7,7 @@ const getBase85DecodeValue = (code) => {
 };
 
 const decode = (str) => {
-  const outLength = Math.floor(str.length / 5) * 4;
+  const outLength = Math.ceil(str.length / 5) * 4;
   const out = new Uint8Array(outLength);
   const view = new DataView(out.buffer);
   for (let i = 0, j = 0; i < str.length; i += 5, j += 4) {
