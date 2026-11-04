@@ -8,3 +8,4 @@ node --max-old-space-size=8192 .\bin\unpackager.js <打包作品路径> -o outpu
 1.2.9修了一点小bug，然后加了插入未反编译js源代码的功能，为了方便手动复原脚本
 
 作者：诺言Promise、落日余晖、チューリングの幽靈
+贡献：Silym 锡璘 //
