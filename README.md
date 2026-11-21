@@ -21,7 +21,7 @@ A：可以，本项目引入了JS反混淆库（webcrack）
 
 Q：本项目可以在Linux及Mac上运行嘛？
 
-A：可以，本项目没有使用Windows底层API
+A：不可以，本项目没有适配除Windows系统外的系统
 
 
 ## 基础命令
@@ -31,7 +31,7 @@ node --max-old-space-size=8192 .\bin\unpackager.js <打包作品路径> -o outpu
 
 ### 环境要求
 
-- Node.js >= 20
+- Node.js >= 22
 
 
 ### 依赖安装
